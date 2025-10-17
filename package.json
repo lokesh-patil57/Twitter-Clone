@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "dev": "vite", 
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
   },
@@ -11,8 +12,10 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "tailwindcss": "^4.1.14",
-    "@tailwindcss/cli": "^4.1.14"
+    "@tailwindcss/cli": "^4.1.14",
+    "tailwindcss": "^4.1.14"
+  },
+  "dependencies": {
+    "vite": "^7.1.10"
   }
-  
 }
