@@ -100,18 +100,97 @@
       </div>
 
       <div class="second w-full border-[1px] border-x-white border-y-black">
-        <div class="top flex ">
-          <div class="left w-1/2 flex justify-center font-bold mt-2">
+        <div class="top flex h-13 relative">
+          <div
+            class="absolute w-16 h-1 rounded-full bg-blue-400 bottom-0 left-[19%] z-10"
+          ></div>
+          <div
+            class="left w-1/2 flex justify-center p-2 font-bold hover:bg-gray-900 hover:cursor-pointer"
+          >
             For you
           </div>
-          <div class="right w-1/2 flex justify-center font-bold mt-2">
+          <div
+            class="right w-1/2 flex justify-center p-2 font-bold hover:bg-gray-900 hover:cursor-pointer"
+          >
             Following
           </div>
-          <div class="setting">
-            <span class="material-symbols-outlined m-3"> settings </span>
+        </div>
+        <div class="h-[1px] w-full bg-gray-700"></div>
+        <div class="foryou">
+          <div class="flex flex-wrap mt-5 ml-6">
+            <div class="img flex">
+              <img src="/images/7.png" class="w-10 h-10" alt="" />
+            </div>
+            <div class="ml-2">
+              <input class="w-full h-7 my-2 outline-none bg-black text-white text-xl " type="text" placeholder="What’s happening ?"></input>
+              <div class="reply flex items-center font-bold" style="color: rgb(29, 155, 240)">
+               <span class=" material-symbols-outlined" >public</span>
+               <p class="text-sm ml-1">Everyone can reply</p>
+              </div>
+            </div>
+            <div class="h-[1px] w-[90%] m-auto mt-2 bg-gray-700"></div>
+          </div>
+          <div class="ml-5 mt-5 mb-2 mr-5 flex">
+            <ul class="ml-15 flex">
+              <li class="hover:cursor-pointer">
+                <span
+                  class="size-1 material-symbols-outlined"
+                  style="color: rgb(29, 155, 240)"
+                >
+                  image
+                </span>
+              </li>
+              <li class="ml-8 hover:cursor-pointer">
+                <span
+                  class="material-symbols-outlined"
+                  style="color: rgb(29, 155, 240)"
+                >
+                  gif_box
+                </span>
+              </li>
+              <li class="ml-4 hover:cursor-pointer">
+                <span
+                  class="material-symbols-outlined"
+                  style="color: rgb(29, 155, 240)"
+                >
+                  checklist
+                </span>
+              </li>
+              <li class="ml-4 hover:cursor-pointer">
+                <span
+                  class="material-symbols-outlined"
+                  style="color: rgb(29, 155, 240)"
+                >
+                  mood
+                </span>
+              </li>
+              <li class="ml-4 hover:cursor-pointer">
+                <span
+                  class="material-symbols-outlined"
+                  style="color: rgb(29, 155, 240)"
+                >
+                  calendar_clock
+                </span>
+              </li>
+              <li class="ml-4 hover:cursor-pointer">
+                <span
+                  class="material-symbols-outlined"
+                  style="color: rgb(29, 155, 240)"
+                >
+                  location_on
+                </span>
+              </li>
+            </ul>
+            <button
+              class="ml-auto bg-gray-500 text-black font-semibold px-5 py-1 rounded-full hover:bg-gray-400 hover:cursor-pointer"
+            >
+              Post
+            </button>
           </div>
         </div>
+        <div class="h-[1px] w-full bg-gray-700"></div>
       </div>
+
       <div class="third w-full">
         <div class="search mt-3 ml-7">
           <input
@@ -149,7 +228,7 @@
                   Test
                 </p>
                 <span class="img1 flex flex-row"
-                  ><img src="/public/images/1.png" alt="" class="w-15" />
+                  ><img src="/images/1.png" alt="" class="w-15" />
                   <p class="text-gray-600 text-sm mt-0.5">
                     1 day ago · Sports · 9,724 posts
                   </p></span
@@ -161,7 +240,7 @@
                   Clashes After Ceasefire
                 </p>
                 <span class="img2 flex flex-row">
-                  <img src="/public/images/2.png" alt="" class="w-15" />
+                  <img src="/images/2.png" alt="" class="w-15" />
                   <p class="text-gray-600 text-sm mt-0.5">
                     1 day ago · News · 441.4K posts
                   </p>
@@ -173,7 +252,7 @@
                   in IRCTC Hotel Case
                 </p>
                 <span class="img3 flex flex-row"
-                  ><img src="/public/images/3.png" alt="" class="w-15" />
+                  ><img src="/images/3.png" alt="" class="w-15" />
                   <p class="text-gray-600 text-sm mt-0.5">
                     3 hours ago · News · 1,690 posts
                   </p>
@@ -187,7 +266,7 @@
             <ul class="space-y-5">
               <li class="text-xl font-bold">What’s happening</li>
               <li class="flex flex-row flex-wrap">
-                <img src="/public/images/4.png" alt="" class="w-22" />
+                <img src="/images/4.png" alt="" class="w-22" />
                 <p class="ml-1 text-base font-semibold">
                   The Axios Show <br /><i class="text-gray-600 ml-1">LIVE</i>
                 </p>
@@ -246,12 +325,10 @@
         <div class="who mt-4 ml-7 w-90 border-1 rounded-xl border-gray-700">
           <div class="people m-5">
             <ul class="flex flex-col">
+              <p class="font-bold text-xl">Who to Follow</p>
               <li class="flex flex-wrap mt-5">
                 <div>
-                  <img
-                    src="/public/images/5.png"
-                    class="w-10 justify-center mt-2"
-                  />
+                  <img src="/images/5.png" class="w-10 justify-center mt-2" />
                 </div>
                 <div class="link flex flex-row">
                   <a href="https://x.com/imVkohli">
@@ -281,17 +358,14 @@
                 </div>
 
                 <button
-                  class="ml-auto bg-gray-900 rounded-full px-4 py-2 text-white"
+                  class="ml-auto bg-sky-500 rounded-full m-4 w-1/3 mt-4 font-semibold hover:bg-sky-600 hover:cursor-pointer"
                 >
                   Follow
                 </button>
               </li>
               <li class="flex flex-wrap mt-5">
                 <div>
-                  <img
-                    src="/public/images/6.png"
-                    class="w-10 justify-center mt-2"
-                  />
+                  <img src="/images/6.png" class="w-10 justify-center mt-2" />
                 </div>
                 <div class="link flex flex-row">
                   <a href="https://x.com/rashtrapatibhvn">
@@ -321,17 +395,14 @@
                 </div>
 
                 <button
-                  class="ml-auto bg-gray-900 rounded-full px-4 py-2 text-white"
+                  class="ml-auto bg-sky-500 rounded-full m-4 w-1/3 mt-4 font-semibold hover:bg-sky-600 hover:cursor-pointer"
                 >
                   Follow
                 </button>
               </li>
               <li class="flex flex-wrap mt-5">
                 <div>
-                  <img
-                    src="/public/images/7.png"
-                    class="w-10 justify-center mt-2"
-                  />
+                  <img src="/images/7.png" class="w-10 justify-center mt-2" />
                 </div>
                 <div class="link flex flex-row">
                   <a href="https://x.com/Luckypatil_57">
@@ -361,7 +432,7 @@
                 </div>
 
                 <button
-                  class="ml-auto bg-gray-900 rounded-full px-4 py-2 text-white"
+                  class="ml-auto bg-sky-500 rounded-full m-4 w-1/3 mt-4 font-semibold hover:bg-sky-600 hover:cursor-pointer"
                 >
                   Follow
                 </button>
