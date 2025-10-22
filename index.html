@@ -9,9 +9,9 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-black text-white">
-    <div class="flex md:container mx-auto">
-      <div class="first w-16 md:w-[70%]">
+  <body class="bg-black text-white relative">
+    <div class="flex md:container mx-auto absolute">
+      <div class=" first w-16 md:w-[70%] sticky">
         <div class="sidebar flex md:items-end flex-col">
           <div class="logo invert my-4 self-start mx-2 md:mx-16">
             <svg
@@ -97,9 +97,20 @@
             </ul>
           </div>
           <button class="flex mr-10 bg-white text-black px-25 font-bold py-3 rounded-full  ">Post</button>
-          <div class="profile flex mr-55 mt-3">
+          <div class="bottom flex flex-row justify-center items-center mr-6 mt-3">
+            <div class="profile flex ">
             <img src="/images/7.png" class="w-10 " alt="">
           </div>
+          <div class="context flex flex-col mt-0 ml-2 ">
+            <span class="flex flex-row gap-20">
+              <p class="font-bold">Lokesh Patil</p>
+              <span class=" material-symbols-outlined ">more_horiz</span>
+
+            </span>
+            <p class="text-gray-500 text-sm ">@Lokeshpatil_57</p>
+          </div>
+          </div>
+          
         </div>
         
       </div>
@@ -194,6 +205,52 @@
           </div>
         </div>
         <div class="h-[1px] w-full bg-gray-700"></div>
+        <div class="post">
+          <div class="">
+            <div class="names flex ml-4 mt-1">
+              <div class="img mt-2">
+                <img src="/images/7.png" class="w-10" alt="">
+              </div>
+              <div class="compo flex justify-center items-center hover:cursor-pointer">
+                <span class="flex hover:underline ml-2 font-semibold">
+                DogeDesigner
+              </span>
+                <svg
+                        viewBox="0 0 22 22"
+                        aria-label="Verified account"
+                        role="img"
+                        class="ml-1 w-5 r-4qtqp9 r-yyyyoo r-1xvli5t r-bnwqim r-lrvibr r-m6rgpd r-f9ja8p r-og9te1 r-3t4u6i"
+                        data-testid="icon-verified"
+                      >
+                        <g>
+                          <path
+                            clip-rule="evenodd"
+                            d="M12.05 2.056c-.568-.608-1.532-.608-2.1 0l-1.393 1.49c-.284.303-.685.47-1.1.455L5.42 3.932c-.832-.028-1.514.654-1.486 1.486l.069 2.039c.014.415-.152.816-.456 1.1l-1.49 1.392c-.608.568-.608 1.533 0 2.101l1.49 1.393c.304.284.47.684.456 1.1l-.07 2.038c-.027.832.655 1.514 1.487 1.486l2.038-.069c.415-.014.816.152 1.1.455l1.392 1.49c.569.609 1.533.609 2.102 0l1.393-1.49c.283-.303.684-.47 1.099-.455l2.038.069c.832.028 1.515-.654 1.486-1.486L18 14.542c-.015-.415.152-.815.455-1.099l1.49-1.393c.608-.568.608-1.533 0-2.101l-1.49-1.393c-.303-.283-.47-.684-.455-1.1l.068-2.038c.029-.832-.654-1.514-1.486-1.486l-2.038.07c-.415.013-.816-.153-1.1-.456zm-5.817 9.367l3.429 3.428 5.683-6.206-1.347-1.247-4.4 4.795-2.072-2.072z"
+                            fill="#829aab"
+                            fill-rule="evenodd"
+                          ></path>
+                        </g>
+                      </svg>
+                      <span class="ml-1 text-gray-500 text-sm">@cb_doge . 4H</span>
+                      <span class=" material-symbols-outlined ml-58">more_horiz</span>
+              </div>
+              
+              
+            </div>
+            <div class="info ml-15 mr-5 mt-0">
+              <span class="text-sm font-medium mt-0">A permanently crewed lunar science base would be India’s next Mangalyaan moment — far more incredibly inspiring than merely repeating what Apollo achieved so brilliantly in 1969.</span>
+            </div>
+
+            
+            <div class="postimg ">
+                <img src="https://pbs.twimg.com/media/G3wh28zXsAEg52p?format=jpg&name=small" class="ml-15 mt-5 rounded-xl w-90" alt="">
+              </div>
+
+              <div class="icons">
+                
+              </div>
+          </div>
+        </div>
       </div>
 
       <div class="third w-full">
