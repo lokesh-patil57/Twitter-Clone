@@ -35,6 +35,7 @@
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
+    --font-weight-black: 900;
     --radius-xl: 0.75rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -192,14 +193,8 @@
   .absolute {
     position: absolute;
   }
-  .fixed {
-    position: fixed;
-  }
   .relative {
     position: relative;
-  }
-  .static {
-    position: static;
   }
   .sticky {
     position: sticky;
@@ -215,9 +210,6 @@
   }
   .m-2 {
     margin: calc(var(--spacing) * 2);
-  }
-  .m-3 {
-    margin: calc(var(--spacing) * 3);
   }
   .m-4 {
     margin: calc(var(--spacing) * 4);
@@ -297,26 +289,11 @@
   .ml-8 {
     margin-left: calc(var(--spacing) * 8);
   }
-  .ml-10 {
-    margin-left: calc(var(--spacing) * 10);
-  }
   .ml-15 {
     margin-left: calc(var(--spacing) * 15);
   }
-  .ml-20 {
-    margin-left: calc(var(--spacing) * 20);
-  }
-  .ml-40 {
-    margin-left: calc(var(--spacing) * 40);
-  }
-  .ml-55 {
-    margin-left: calc(var(--spacing) * 55);
-  }
   .ml-58 {
     margin-left: calc(var(--spacing) * 58);
-  }
-  .ml-60 {
-    margin-left: calc(var(--spacing) * 60);
   }
   .ml-\[80px\] {
     margin-left: 80px;
@@ -396,9 +373,6 @@
   }
   .w-90 {
     width: calc(var(--spacing) * 90);
-  }
-  .w-100 {
-    width: calc(var(--spacing) * 100);
   }
   .w-\[90\%\] {
     width: 90%;
@@ -502,9 +476,6 @@
   .bg-gray-900 {
     background-color: var(--color-gray-900);
   }
-  .bg-red-500 {
-    background-color: var(--color-red-500);
-  }
   .bg-sky-500 {
     background-color: var(--color-sky-500);
   }
@@ -561,6 +532,10 @@
   .text-\[15px\] {
     font-size: 15px;
   }
+  .font-black {
+    --tw-font-weight: var(--font-weight-black);
+    font-weight: var(--font-weight-black);
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
@@ -584,17 +559,11 @@
   .text-black {
     color: var(--color-black);
   }
-  .text-gray-400 {
-    color: var(--color-gray-400);
-  }
   .text-gray-500 {
     color: var(--color-gray-500);
   }
   .text-gray-600 {
     color: var(--color-gray-600);
-  }
-  .text-gray-700 {
-    color: var(--color-gray-700);
   }
   .text-sky-700 {
     color: var(--color-sky-700);
